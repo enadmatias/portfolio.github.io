@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/w3.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Supermercado+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<head>
+	<title>Portfolio</title>
+</head>
+
+	<style type="text/css">
+	body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+* {box-sizing: border-box;}
+
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 30px 20px ;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: #008080;
+
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+
+}
+.head h2:before, .head h2:after {
+    display: inline-block;
+    content: "";
+    border-top: .5rem solid grey;
+    width: 26rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+    transform: translateY(-.3rem);
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 50px;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+</style>
+<body>
+<!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a href="index.html"  style="font-family: 'Roboto Slab', serif;
+     font-family: 'Supermercado One', cursive;">Matias Enad</a>
+  </div>
+  
+  <!-- Left-aligned links (default) -->
+  <a href="about.html" >ABOUT</a>
+  <a href = "work.html">WORK</a>
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="resume.html">RESUME</a>
+    <a href="contact.html" class="active">CONTACT</a>
+  </div>
+  
+</div>
+<div class="w3-container head">
+	<div class="w3-row w3-container">
+  <h2 class="w3-center" style="font-size: 30px;border-right: 2px;">CONTACT INFORMATION</h2>
+ </div>
+ </div> 
+<div class="w3-row w3-container w3-center " style="margin-top: 50px;">
+	<div class="w3-col w3-container" ><a href="https://www.facebook.com/matt.enad" target="_blank"><i class="fa fa-facebook-f" style="font-size: 100px;color: blue;margin-right: 100px;"></i></a>
+		<a href="https://www.linkedin.com/in/matias-enad-b092a6186/" target="_blank"><i class="fa fa-linkedin" style="font-size: 100px;color: blue;"></i></a>
+</div>
+</div>
+<div class="w3-center">
+<p style="font-family: 'Abril Fatface', cursive;font-size: 50px;margin-top: 100px;color: grey;">O R</p>
+</div>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>

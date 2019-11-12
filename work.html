@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+ <link rel="stylesheet" type="text/css" href="css/w3.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Supermercado+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<head>
+	<title>Portfolio</title>
+</head>
+<style type="text/css">
+	body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 30px 20px ;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: #008080;
+
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+
+}
+img {
+  padding: 5px;
+  width: 250px;
+  padding-top: 10px;
+  margin-left: 50px;
+  margin-right: 10px;
+  float: left
+}
+.head h2:before, .head h2:after {
+    display: inline-block;
+    content: "";
+    border-top: .5rem solid grey;
+    width: 36rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+    transform: translateY(-.3rem);
+}
+
+.details{
+	text-align: justify;
+	text-justify:auto;
+	
+  
+}
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+</style>
+<body>
+<!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a href="index.html"  style="font-family: 'Roboto Slab', serif;
+     font-family: 'Supermercado One', cursive;">Matias Enad</a>
+  </div>
+  
+  <!-- Left-aligned links (default) -->
+  <a href="about.html" >ABOUT</a>
+  <a href = "work.html"class="active">WORK</a>
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="resume.html">RESUME</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  
+</div>
+<div class="w3-container head">
+	<div class="w3-row w3-container">
+  <h2 class="w3-center" style="font-size: 30px;border-right: 2px;">MY WORK</h2>
+ </div>
+ </div> 
+
+ <div class="w3-row w3-container">
+ 	<div class="w3-col w3-container"><a href="https://github.com/matiasenad1994/mobile-app"><img src="images/wd_logo.png"></a> <p style="font-size: 18px;text-align: justify; text-justify: auto;margin-top: 50px;"> A mobile application that serves an online platform for electrical services. The client will book a service from a selected service provider, it can be a company or an individual. The program also allow the user to choose an individual service provider, the system will also provide the service provider information such as years of experience and ratings. The languages have been using are <a href="https://en.wikipedia.org/wiki/PHP" style="text-decoration: none;color: green">PHP</a> and <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" style="text-decoration: none; color: green"> Java</a> while for database is <a href="https://en.wikipedia.org/wiki/MySQLi" style="text-decoration:none;color: green">MySQLi.<a/</p></div>
+ 	<div class="w3-col w3-container"><a href="https://github.com/matiasenad1994/BusTicketing-BasicPhp" "><img src="images/cebus.png"></a><p style="font-size: 18px;text-align: justify; text-justify: auto;margin-top: 100px;">A Web application for bus ticketing services. The user can view the details of the bus departure and arrival. The cost will automatically be calculated once you book to the exact location. It has also the information of the bus destination and vice versa. The languages used to develop the system are PHP, JAVASCRIPT, and BOOTSTRAP while the database is MYSQLi.
+ 	</p></div>	
+ </div>
+</body>
+</html>
